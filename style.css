@@ -1,10 +1,19 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 body {
     padding: 0px;
     margin: 0;
     background-color:whitesmoke;
-    
+    overflow-x: hidden;
 }
 .header {
+    flex-wrap: wrap;
+    z-index: 1000;
+    justify-content: space-between;
+
     position: fixed;
     top: 0;
     width: 100%;
@@ -302,9 +311,10 @@ body {
     margin-bottom: 25px;
 }
 .final-box {
-    display: inline-block;
-    gap: 20px;
-    justify-content: space-between;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 .boxes {
@@ -401,6 +411,7 @@ body {
     width: 1500px;
 }
 .official-social-section {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -435,6 +446,7 @@ body {
     text-decoration: none;
 }
 footer {
+    width: 100%;
     background-color: #fde6e6;
     padding: 20px;
     color: #333;
